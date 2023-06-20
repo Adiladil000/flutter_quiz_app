@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomElevationButton extends StatelessWidget {
-  CustomElevationButton({super.key, required this.text, required this.faIcon, required this.onPressed});
-  String text;
-  Function() onPressed;
-  FaIcon faIcon;
+  const CustomElevationButton({super.key, required this.text, required this.faIcon, required this.onPressed});
+  final String text;
+  final Function() onPressed;
+  final FaIcon faIcon;
   @override
   Widget build(BuildContext context) {
     return Container(
